@@ -11,4 +11,4 @@ select
     round(o.margin + s.shipping_fee - s.logcost - s.ship_cost, 2) as operational_margin
 from {{ ref('int_orders_margin') }} as o
 left join {{ ref('stg_raw__ship') }} as s
-    using (order_id)
+    on o.order_id = s.orders_id

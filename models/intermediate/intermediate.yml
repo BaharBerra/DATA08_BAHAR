@@ -31,7 +31,7 @@ models:
   - name: int_orders_operational
     description: "Order-level margin joined with shipping data, with operational margin calculated."
     columns:
-      - name: orders_id
+      - name: order_id
         description: "Order identifier (primary key)."
         tests:
           - unique
