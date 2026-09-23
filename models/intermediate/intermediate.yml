@@ -1,0 +1,12 @@
+version: 2
+models:
+  - name: int_sales_product
+    description: sales details with product purchase cost
+    columns:
+      - name: order_id
+        tests:
+          - not null
+      - name: product_id
+        tests: 
+          - not null
+        
