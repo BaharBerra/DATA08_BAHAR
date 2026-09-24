@@ -26,3 +26,4 @@ select
     quantity
 from orders_per_day
 order by date_date desc
+
