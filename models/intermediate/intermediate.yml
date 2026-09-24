@@ -4,11 +4,11 @@ models:
   - name: int_sales_margin
     description: "Sales at product line level, with purchase cost and margin calculated."
     columns:
-      - name: orders_id
+      - name: order_id
         description: "Order identifier."
         tests:
           - not_null
-      - name: products_id
+      - name: product_id
         description: "Product identifier."
         tests:
           - not_null
@@ -20,7 +20,7 @@ models:
   - name: int_orders_margin
     description: "Revenue, quantity, purchase cost and margin aggregated at order level."
     columns:
-      - name: orders_id
+      - name: order_id
         description: "Order identifier (primary key)."
         tests:
           - unique
